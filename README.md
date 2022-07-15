@@ -1,8 +1,9 @@
 ENIDrift
-[![Unit Tests](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/BeVM624n)
+[![GitHub license][license-badge]](LICENSE)
+[![Discord Chat][discord-badge]][discord]
 ==
 
-<img src="src/longlogo.svg" alt="logo" width="80%">
+<img src="src/longlogo.svg" alt="logo" width="40%">
 
 ENIDrift is a fast and adaptive Ensemble system for Network Intrusion Detection under real world Drift.
 
@@ -12,3 +13,10 @@ ENIDrift is a fast and adaptive Ensemble system for Network Intrusion Detection 
 ## Documentation
 ## Community & help
 ## Contribute
+
+<!-- refs -->
+[unit-tests]: https://github.com/edgelesssys/edgelessdb/actions
+[unit-tests-badge]: https://github.com/edgelesssys/edgelessdb/workflows/Unit%20Tests/badge.svg
+[license-badge]: https://img.shields.io/github/license/anonymousgithubrepo/enidrift
+[discord]: https://discord.gg/BeVM624n
+[discord-badge]: https://img.shields.io/badge/chat-on%20Discord-blue
