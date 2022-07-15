@@ -1,2 +1,10 @@
-# ENIDrift: A Practical Ensemble System for Network Intrusion Detection under Real World Drift
-ENIDrift code and RWDIDS dataset are given here. They will not be the final version.
+ENIDrift
+
+ENIDrift is a fast and adaptive Ensemble system for Network Intrusion Detection under real world Drift.
+
+## Use cases
+## Key features
+## Getting started
+## Documentation
+## Community & help
+## Contribute
