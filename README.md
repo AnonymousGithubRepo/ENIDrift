@@ -1,9 +1,9 @@
-ENIDrift
+<img src="src/title.svg" alt="logo" width="40%">
 [![GitHub license][license-badge]](LICENSE)
 [![Discord Chat][discord-badge]][discord]
 ==
 
-<img src="src/longlogo.svg" alt="logo" width="40%">
+
 
 ENIDrift is a fast and adaptive Ensemble system for Network Intrusion Detection under real world Drift.
 
