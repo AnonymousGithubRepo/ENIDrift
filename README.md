@@ -1,5 +1,4 @@
-<img src="src/title.svg" alt="logo" width="40%">
-
+ENIDrift
 [![GitHub license][license-badge]](LICENSE)
 [![Discord Chat][discord-badge]][discord]
 ==
