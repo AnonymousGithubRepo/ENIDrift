@@ -1,4 +1,5 @@
 <img src="src/title.svg" alt="logo" width="40%">
+
 [![GitHub license][license-badge]](LICENSE)
 [![Discord Chat][discord-badge]][discord]
 ==
