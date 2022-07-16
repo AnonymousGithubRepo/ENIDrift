@@ -28,10 +28,10 @@ Compared to other work, ENIDrift has:
       For privacy issues, only key network fields are kept in our dataset in the form of .csv files. Accordingly, the input for ENIDrift is .csv files containing the string-type fields of network packets. If you want to run on your own .pcap file, we suggest utilizing our [python script](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/util/pcap2csv.py) to convert .pcap to .csv file first. The script is based on [Kitsune](https://github.com/ymirsky/Kitsune-py).
 
 2. Software configuration:
-  * Python 3.8.5
-  * scikit-learn 0.23.2
-  * tensorflow 2.4.1
-  * scapy 2.4.3
+      * Python 3.8.5
+      * scikit-learn 0.23.2
+      * tensorflow 2.4.1
+      * scapy 2.4.3
 ## Getting started
 1. Download the source code:
 ```sh
