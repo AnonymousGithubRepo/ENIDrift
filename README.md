@@ -27,10 +27,10 @@ Compared to other work, ENIDrift has:
 
 |Library|Version|
 | :------: | :------: |
-|Python|3.8.5|
+|Python|3.8|
 |scikit-learn|0.23.2|
-|||
-|||
+|tensorflow|2.4.1|
+|scapy|2.4.3|
 
 2. Network packets:
 
