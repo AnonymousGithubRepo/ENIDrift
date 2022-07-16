@@ -3,11 +3,33 @@
 [![Discord Chat][discord-badge]][discord]
 ==
 
-**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. It consists of: 1) iP2V, an incremental packet-to-vector feature extraction method; 2) Sub-classifier generation module; 3) ENIDrift update module. Compared to other network intrusion detection systems (NIDSs), we place ENIDrift under real-world drift that involves dynamically distributed network packets and well-crafted ML attacks. ENIDrift is also much faster than state-of-the-art approach, which alleviates the preasure of processing speed of network packets in real world. 
+**ENIDrift** is a fast and adaptive **E**nsemble system for **N**etwork **I**ntrusion **D**etection under real world **Drift**. The technique design of this work is introduced in this [updated paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf). Besides, we provide the code of ENIDrift in this repo, and also open-source the first real-world drift dataset for network intrusion detection (RWDIDS'22).
 
-The technique design of this work is introduced in this [updated paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf). Besides, we provide the code of ENIDrift in this repo, and also open-source the first real-world drift dataset for network intrusion detection (RWDIDS'22).
-## Use cases
-## Key features
+## What is ENIDrift?
+Machine Learning (ML) techniques have been widely applied for network intrusion detection. However, existing ML-based network intrusion detection systems (NIDS) suffer from fundamental limitations that hinder them from being deployed in the real world. They consider a narrow scope rather than real-world drift that involves dynamically distributed network packets and well-crafted ML attacks. Besides, they pose high runtime overhead and have low processing speed.
+
+In this work, we solve the limitations and design ENIDrift, a fast and adaptive ensemble system for real-world network intrusion detection. ENIDrift employs iP2V, a novel incremental feature extraction method based on network packet fields, which adopts a simple three-layer neural network with relatively lightweight computation and achieves high efficiency. ENIDrift uses a robust sub-classifier generation module that constructs new sub-classifiers based on the stability and accuracy of incoming data chunks, and its training time is also reduced from O(n) to O(1).
+
+Compared to other work, ENIDrift has:
+1. **Novel techniques and system.** We develop a new NIDS, ENIDrift with several new techniques: 1) iP2V that incrementally embeds relevant network packets into similar vectors and has good performance and efficiency for NIDS tasks; 2) G-idx that measures both stability and accuracy of current data chunk for a more robust sub-classifier generation; 3) ENIDrift update module that improves the adjustment of sub-classifier weights and data chunk management.
+2. **New open-sourced dataset with real-world drift.** We spent considerable effort constructing a new dataset considering real-world settings and fierce drift caused by concept drift, imbalanced data, and well-crafted ML attack.
+3. **Readily deployable performance.** Our evaluation results demonstrate that ENIDrift has good performance on both accuracy and processing speed, and is sufficient for real-world deployment even under inadequate and delayed training data.
+
+We show the workflow of ENIDrift in the figure below. At the initial stage, raw packets will be captured by external programs (e.g., WireShark). Then the data will be sent to our system continuously. The later three parts in the figure are where the main body of ENIDrift lies:
+
+* **iP2V embedding.** ENIDrift provides an incremental packet-to-vector tool, iP2V, deployed to extract features from raw network packets. The extraction results will be sent for the following ensemble detection.
+
+* **Ensemble detection.** The ensemble model of ENIDrift consists of several sub-classifiers and ENIDrift will output the weighted predictions as its final detection result. Meanwhile, the incoming data will also be copied to sub-classifier generation module for further training.
+
+* **Learning new distribution.** Sub-classifier generation module and ENIDrift update module involve in the stage. They will help find the right training data chunk based on our G-idx and adjust the ensemble model.
+
+![An illustration of ENIDrift's workflow](https://raw.githubusercontent.com/anonymousgithubrepo/ENIDrift/master/src/workflow.png)
+
+Some points about ENIDrift:
+1. It is placed under real-world settings. The dataset can be very imbalanced and changeable. We even enable the delay of releasing training data in the advanced functions, which is realistic in reality.
+2. The distribution of dataset is based on real-world network, which involves dynamic real-world drift that caused by changeable and imbalanced network packets, concept drift of network behavior, and well-crafted ML attack (e.g., data contamination and adversarial attack). And the basic attack set of our work is also expanded.
+3. ENIDrift is very fast and efficient. iP2V is at least one order of magnitude faster than the counter part of the state-of-the-art method, and the total processing speed for the system is improved and can meet the online network packet rate of our network.
+
 ## Prerequisites
 1. Python libraries:
 
@@ -30,6 +52,9 @@ git clone https://github.com/AnonymousGithubRepo/ENIDrift
 2. Model load:
 
 3. Control the speed of the release of training data:
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Documentation
 See [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf) for details on ENIDrift concepts and configuration.
