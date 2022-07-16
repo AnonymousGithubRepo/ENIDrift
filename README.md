@@ -29,8 +29,8 @@ Compared to other work, ENIDrift has:
 | :------: | :------: |
 |Python|3.8.5|
 |scikit-learn|0.23.2|
-|algorithm agnostic attestation service|apt-get install libsgx-quote-ex libsgx-urts|
-|DCAP ECDSA-based service |apt-get install libsgx-dcap-ql|
+|||
+|||
 
 2. Network packets:
 
