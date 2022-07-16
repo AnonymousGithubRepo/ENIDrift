@@ -2,9 +2,7 @@ from scapy.all import *
 import pandas as pd
 import numpy as np
 
-file_list = ['20201209.pcap', '20201210.pcap', '20201211.pcap', '20201212.pcap', '20201213.pcap', '20201214.pcap', '20201215.pcap',
-             '20201216.pcap', '20201217.pcap', 'zy-20201210.pcap', 'zy-20201211.pcap',
-             'zy-20201212.pcap', 'zy-20201213.pcap', 'zy-20201214.pcap', 'zy-20201215.pcap', 'zy-20201216.pcap']
+file_list = ['packet_0.pcap', 'packet_1.pcap']
 
 for file in file_list:
     pcap = PcapReader(file)
