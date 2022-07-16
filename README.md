@@ -23,21 +23,19 @@ Compared to other work, ENIDrift has:
 3. **Readily deployable performance.** Our evaluation results demonstrate that ENIDrift has good performance on both accuracy and processing speed, and is sufficient for real-world deployment even under inadequate and delayed training data.
 
 ## Prerequisites
-1. Libraries:
+1. Pre-process for network packets.
 
-|Library|Version|
-| :------: | :------: |
-|Python|3.8|
-|scikit-learn|0.23.2|
-|tensorflow|2.4.1|
-|scapy|2.4.3|
+      For privacy issues, only key network fields are kept in our dataset in the form of .csv files. Accordingly, the input for ENIDrift is .csv files containing the string-type fields of network packets. If you want to run on your own .pcap file, we suggest utilizing our [python script]() to convert .pcap to .csv file first.
 
-2. Network packets:
-
+2. Software configuration:
+  * Python 3.8.5
+  * scikit-learn 0.23.2
+  * tensorflow 2.4.1
+  * scapy 2.4.3
 ## Getting started
 1. Download the source code:
 ```sh
-git clone https://github.com/AnonymousGithubRepo/ENIDrift
+$ git clone https://github.com/AnonymousGithubRepo/ENIDrift
 ```
 
 2. Run ENIDrift:
