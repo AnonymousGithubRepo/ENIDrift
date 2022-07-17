@@ -34,7 +34,7 @@ Compared to other work, ENIDrift has:
       * scapy 2.4.3
       * scipy 1.7.1
       * joblib 1.1.0
-## Getting started
+## Quick start
 1. Download the source code:
 ```sh
 $ git clone https://github.com/AnonymousGithubRepo/ENIDrift
@@ -47,17 +47,20 @@ $ python3 main
 ```
 
 ## Advanced functions
-1. Model save:
+1. Model save.
+      To save the artificial neural network of iP2V and sub-classifiers of ENIDrift (i.e., models, weights and number of trained sub-classifiers), please set the 'save' option to be True in the main.py file. The program will save the related information by joblib library at the end of the execution. The ENIDrift sub-classifiers will be saved in the folder named model. The neural network of iP2V will be saved in the folder named para (short for parameter).
 
-2. Model load:
+2. Model load.
+      If there are files with corresponding types in the folder of model and para, the program will detect them and load the weights and parameters into ENIDrift.
 
-3. Control the speed of the release of training data:
+3. Control the speed of the release of training data.
+      To simulate the time gap and delay of training data with ground truth labels, we enables a much slower release of training data. To observe NIDS under different levels of delays, please set the parameter 'realese_speed' with corresponding values.
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Documentation
-See [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf) for details on ENIDrift concepts and configuration.
+Please download [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf) for details on ENIDrift concepts and configuration.
 
 ## Community & help
 * Got a question? Please get in touch via [Discord][discord] or file an [issue](https://github.com/anonymousgithubrepo/enidrift/issues).
