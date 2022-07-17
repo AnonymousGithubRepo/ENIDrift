@@ -32,6 +32,7 @@ Compared to other work, ENIDrift has:
       * scikit-learn 0.23.2
       * tensorflow 2.4.1
       * scapy 2.4.3
+      * scipy 1.7.1
 ## Getting started
 1. Download the source code:
 ```sh
