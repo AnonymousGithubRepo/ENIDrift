@@ -57,7 +57,7 @@ $ python3 main
       To simulate the time gap and delay of training data with ground truth labels, we enables a much slower release of training data. To observe NIDS under different levels of delays, please set the parameter 'realese_speed' with corresponding values.
 
 # License
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/LICENSE) file for details
 
 ## Documentation
 Please download [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf) for details on ENIDrift concepts and configuration.
