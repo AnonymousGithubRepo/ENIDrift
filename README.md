@@ -65,3 +65,8 @@ Please download [the paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob
 ## Community & help
 * Got a question? Please get in touch via [Discord][discord] or file an [issue](https://github.com/anonymousgithubrepo/enidrift/issues).
 * If you see an error message or run into an issue, please make sure to create a [bug report](https://github.com/anonymousgithubrepo/enidrift/issues).
+
+<!-- refs -->
+[license-badge]: https://img.shields.io/github/license/anonymousgithubrepo/enidrift
+[discord]: https://discord.gg/BeVM624n
+[discord-badge]: https://img.shields.io/badge/chat-on%20Discord-blue
