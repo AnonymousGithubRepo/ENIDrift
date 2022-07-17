@@ -33,6 +33,7 @@ Compared to other work, ENIDrift has:
       * tensorflow 2.4.1
       * scapy 2.4.3
       * scipy 1.7.1
+      * joblib 1.1.0
 ## Getting started
 1. Download the source code:
 ```sh
