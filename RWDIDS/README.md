@@ -13,7 +13,7 @@ The network topology of our dataset RWDIDS and field test is shown in the above 
 
 # Instructions
 
-For privacy issues, we only extract the key fields used in NIDS and remove other sensitive information. The left key network fields are saved as .csv files, and can support NIDSs including but not limited to methods based on one-hot feature extraction, damped incremental statistics from [Kitsune](https://github.com/ymirsky/Kitsune-py), and iP2V (for individual conponent, see [link](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/ENIDrift/iP2V)). If you want to use damped incremental statistics from Kitsune, we provide an [adapted program]() for your reference. It extracts features based on .csv network packet field.
+For privacy issues, we only extract the key fields used in NIDS and remove other sensitive information. The left key network fields are saved as .csv files, and can support NIDSs including but not limited to methods based on one-hot feature extraction, damped incremental statistics from [Kitsune](https://github.com/ymirsky/Kitsune-py), and iP2V (for individual conponent, see [link](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/ENIDrift/iP2V)). If you want to use damped incremental statistics from Kitsune, we provide an [adapted program](https://github.com/AnonymousGithubRepo/ENIDrift/tree/main/RWDIDS/DISKitsuneCSV) for your reference. It extracts features based on .csv network packet field.
 
 # Distribution of RWDIDS'22
 
