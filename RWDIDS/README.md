@@ -1,4 +1,8 @@
 # RWDIDS'22
+**ENIDrift**
+![GitHub](https://img.shields.io/github/license/anonymousgithubrepo/enidrift)
+[![Discord Chat][discord-badge]][discord]
+==
 
 RWDIDS'22 is the first dataset containing several real world drifts. It is a **R**eal-**W**orld **D**rift dataset for network **I**ntrusion **D**etection **S**ystem. It is made because no dataset is found focusing on the dynamic distribution in reality and including various real-world drifts. RWDIDS contains network packets of 6 days in level-2, where the distribution changes gradually and real-world drift grows heavy. And the data of 4 sub-experiments in level-3 mentioned above is also from RWDIDS. They are intense real-world drift caused by concept drift and well-crafted ML attack. And the ratio of the number of packages is imbalanced and changeable in RWDIDS, posing a threat to the training and updating of NIDSs. We capture network traffic by [WireShark](https://www.wireshark.org/), extract network fields from original .pcap files to form .csv files, and open-source RWDIDS. It can be downloaded [here](https://drive.google.com/drive/folders/11Trsu4zsKJo8CBbv52j_N6BEPjcJkItu?usp=sharing). Detailed information can also be found in this [paper](https://github.com/AnonymousGithubRepo/ENIDrift/blob/main/ENIDrift.pdf).
 
