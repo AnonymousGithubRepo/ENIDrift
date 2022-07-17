@@ -41,7 +41,8 @@ $ git clone https://github.com/AnonymousGithubRepo/ENIDrift
 
 2. Run ENIDrift:
 ```sh
-.
+$ cd ENIDrift
+$ python3 main
 ```
 
 ## Advanced functions
